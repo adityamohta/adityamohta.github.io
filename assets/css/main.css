@@ -57,6 +57,7 @@ awesome-button.btn-resume-download {
     -webkit-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
     color: #fff;
+    max-height: 700px;
     min-width: 70%;
     max-width: 90%;
     padding: 2em 3em;
