@@ -46,6 +46,8 @@ awesome-button.btn-resume-download {
 
 .user-icon {
     max-height: 150px;
+    border-radius: 100%;
+    border: 1px solid #323840;
 }
 
 .text {
