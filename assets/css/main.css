@@ -28,7 +28,7 @@ canvas {
 #particles-js {
     position: absolute;
     width: 100%;
-    min-height: 600px;
+    min-height: 800px;
     background: #323840;
 }
 
@@ -55,10 +55,9 @@ awesome-button.btn-resume-download {
     top: 50%;
     right: 50%;
     -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
+    transform: translate(50%, -40%);
     color: #fff;
     max-height: 700px;
-    min-width: 70%;
     max-width: 90%;
     padding: 2em 3em;
     background: rgba(0, 0, 0, 0.4);
