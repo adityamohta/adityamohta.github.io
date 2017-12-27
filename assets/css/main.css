@@ -1,37 +1,45 @@
-body{
-    margin:0;
-    font:normal 75% Ubuntu, Arial, Helvetica, sans-serif;
+/*********************\
+    General styles
+\*********************/
+body {
+    font: normal 75% Ubuntu, Arial, Helvetica, Roboto, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
 canvas {
     display: block;
     vertical-align: bottom;
 }
 
-.btn-custom {
-    font-style: normal !important;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 20px !important;
-    font-family: Ubuntu, Arial, Helvetica, sans-serif !important;
+hr {
+    width: 80%;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-#btn-amcat, #btn-resume, #btn-resume-download, #btn-hackerearth {
-    font-style: normal !important;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    padding: 20px !important;
-    font-family: Ubuntu, Arial, Helvetica, sans-serif !important;
+h1 {
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+div.container-fluid {
+    position: relative;
+    min-height: 100%;
+    max-height: inherit;
 }
 
 #particles-js {
     position: absolute;
-    width: 100%;
-    min-height: 800px;
-    background: #323840;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: rgba(50, 56, 64, 1);
 }
-
 awesome-button {
     padding: 2px;
 }
@@ -44,60 +52,100 @@ awesome-button.btn-resume-download {
     padding-left: 1px;
 }
 
-.user-icon {
-    max-height: 150px;
-    border-radius: 100%;
-    border: 1px solid #323840;
+.banner {
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    right: -10px;
+    text-align: center;
+    background-color: rgba(231, 76, 60, 0.7);
+    transition: top 0.5s ease;
+    font-weight: bold;
 }
 
-.text {
+/*.banner:hover,*/
+.banner:hover::after,
+.banner:hover::before {
+    height: 30px;
+    top: -30px;
+    transition: height 0.5s ease, top 0.5s ease;
+}
+.banner:hover {
+    top:30px;
+    transition: top 0.5s ease;
+    cursor: pointer;
+}
+
+.banner::after,
+.banner::before {
+    content: "";
     position: absolute;
-    top: 50%;
-    right: 50%;
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, -40%);
+    top: -5px;
+    height: 5px;
+    width: 10px;
+    transition: height 0.5s ease, top 0.5s ease;
+}
+.banner::after {
+    left: 0;
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0) 50%, rgba(192, 57, 43, 0.7) 50%);
+}
+.banner::before {
+    right: 0;
+    background-image: linear-gradient(to left bottom, rgba(0,0,0,0) 50%, rgba(192, 57, 43, 0.7) 50%);
+}
+
+.banner-surprise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font: normal normal 400 16px 'Roboto',Serif;
+    height: 0;
+    overflow: hidden;
+    transition: top 0.5s ease, height 0.5s ease;
+}
+.banner:hover .banner-surprise {
+    top: -20px;
+    height: 20px;
+    transition: top 0.5s ease, height 0.5s ease;
+}
+
+.user-icon {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border: 1px solid #323840;
+    border-radius: 50%;
+    margin: 100px auto 10px auto;
+}
+
+.card-resume {
+    position: relative;
+    z-index: 1;
+    margin: 40px auto;
     color: #fff;
-    max-height: 700px;
-    max-width: 90%;
+    max-width: 600px;
     padding: 2em 3em;
-    background: rgba(0, 0, 0, 0.4);
-    text-shadow: 0px 0px 2px #131415;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 2px #131415;
     font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+.profile-links {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .lead {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 768px) {
     .text {
         width: fit-content;
     }
-}
-hr {
-    width: 80%;
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: 100;
-    letter-spacing: -1px;
-}
-
-@media (min-width: 768px) {
-    h1{
-        font-size: 36px;
-    }
-    .lead {
-        font-size: 16px;
-    }
-}
-
-a,
-a:visited {
-    color: #e34234;
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
-}
-
-a:hover,
-a:focus {
-    color: #ba160c;
 }
