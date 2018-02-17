@@ -17,7 +17,7 @@ const Home = () => (
         <Particles className="background-particle-js" params={values}/>
         <div className="home">
             <div className="panel-center">
-                <Banner greeting="Hello Visitor! :D" title="Kumar Aditya Mohta"/>
+                <Banner greeting="" title="Kumar Aditya Mohta"/>
                 <UserIcon />
                 <UserAbout/>
             </div>
