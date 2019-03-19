@@ -1,4 +1,4 @@
-require('./sass/project_card.sass');
+import './styles.sass';
 
 import React from 'react';
 import {Link} from "react-router-dom";

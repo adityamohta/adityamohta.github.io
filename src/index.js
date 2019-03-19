@@ -2,13 +2,13 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import store, { history } from './config';
+import store, { history } from './store';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
+import {ConnectedRouter} from 'connected-react-router';
 
 const target = document.getElementById('root');
 
-import App from './containers/app';
+import App from './App';
 
 ReactDOM.render(
     <Provider store={store}>

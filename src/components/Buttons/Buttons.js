@@ -1,4 +1,4 @@
-require('./sass/buttons.sass');
+import './styles.sass';
 
 import React from 'react';
 

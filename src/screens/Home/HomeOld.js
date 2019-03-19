@@ -1,18 +1,17 @@
-require('./sass/home.sass');
-import "babel-polyfill";
 import React from "react";
 
-import Banner from './Banner';
-import UserIcon from './UserIcon';
-import UserAbout from './UserAbout';
-import * as Buttons from './Buttons';
-import ProjectCard from './ProjectCard';
+import Banner from '../../components/Banner';
+import UserIcon from '../../components/UserIcon';
+import UserAbout from '../../components/UserAbout';
+import Buttons from '../../components/Buttons';
+import ProjectCard from '../../components/ProjectCard';
 
+import values from '../../utils/particles.json';
 import Particles from 'react-particles-js';
-import values from '../utils/particles.json';
-require('../utils/background.sass');
+import './styles_old.sass'
+import '../../utils/background.sass';
 
-const Home = () => (
+const HomeOld = () => (
     <React.Fragment>
         <Particles className="background-particle-js" params={values}/>
         <div className="home">
@@ -42,4 +41,4 @@ const Home = () => (
     </React.Fragment>
 );
 
-export default Home;
+export default HomeOld;

@@ -1,4 +1,4 @@
-require('./sass/user_about.sass');
+import './styles.sass';
 
 import React from 'react';
 

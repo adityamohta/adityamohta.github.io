@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
 
 const allReducers = combineReducers({
-    router: routerReducer
+    empty: (state = {}) => state,
 });
 export default allReducers;

@@ -1,4 +1,4 @@
-require('./sass/banner.sass');
+import './styles.sass';
 
 import React from 'react';
 
