@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 import {SKILLS, WORKFLOWS} from "../../../constants";
 
 
-export default class Education extends PureComponent {
+export default class Skills extends PureComponent {
 
     render() {
 

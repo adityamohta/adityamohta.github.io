@@ -80,8 +80,11 @@ p.lead
     letter-spacing: 0.05rem
     text-transform: uppercase
 
+  .navbar-toggler
+    border: none
   .navbar-toggler:focus
-    outline-color: #d48a6e
+    outline: none
+    //outline-color: #d48a6e
 
 @media (min-width: 992px)
   #sideNav
@@ -160,3 +163,8 @@ a
   color: $primary
   &:hover, &:focus, &:active
     color: $primary-dark
+
+.navbar-name
+  font-weight: 800
+  letter-spacing: 1px
+  font-size: 24px
