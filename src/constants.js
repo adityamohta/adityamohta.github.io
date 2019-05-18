@@ -16,15 +16,24 @@ export const RESUME = '/assets/img/resume.png';
 
 export const EXPERIENCE = [
     {
+        title: 'Senior Software Developer',
+        company: 'HEALTH FACTORIAL SOLUTIONS',
+        description: `
+            Built APIs on Django Framework. Setup production server on AWS.
+            Built an e-commerce web app using React.js.
+        `,
+        date: 'May 2019 - Present',
+    },
+    {
         title: 'Software Developer',
         company: 'TARDIGRADE HEALTHTECH',
         description: `
-            Built APIs on Django Framework, Implemented Task Queuing to optimize server performance. 
-            Graph data analytics, scheduler and caching. 
-            Built landing page for clients on Angular.js to get live tracking data of devices.
-            Built interface for real-time device tracker. Setup production server on AWS.
+            Built a generic chat bot builder tool. Built APIs on Django Framework, 
+            Implemented Task Queuing to optimize server performance. 
+            Graph data analytics, scheduler and caching.
+            Built 'The Good Doctor' app using React Native. Setup production server on AWS.
         `,
-        date: 'September 2018 - Present',
+        date: 'September 2018 - May 2019',
     },
     {
         title: 'Software Developer',
