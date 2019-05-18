@@ -6,7 +6,7 @@ export const NAME = 'Aditya Mohta';
 export const EMAIL = 'aditya@tardigrade.in';
 // export const DESCRIPTION = `I am experienced in leveraging agile frameworks to provide a robust synopsis for high level
 // overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.`;
-export const DESCRIPTION = `Hello, I am a full-stack developer, experienced in Android, IOS and Web App development. 
+export const DESCRIPTION = `Hello, I am a full-stack developer, experienced in Android, IOS, Web App and Backend development. 
 I am passionate about what I do and always give my 100%. When I undertake a project or task, I don't just complete it, 
 I go the extra mile and make it better than requested.`;
 export const LINKEDIN = 'https://www.linkedin.com/in/kumaradityamohta';

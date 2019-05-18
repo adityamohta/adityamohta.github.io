@@ -9,7 +9,12 @@ export default class Experience extends PureComponent {
         return (
             <section className="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
                 <div className="w-100">
-                    <h2 className="mb-5">Experience</h2>
+                    <div className="d-flex align-items-start justify-content-between">
+                        <h2 className="mb-5">Experience</h2>
+                        <div className="pt-2 resume-date text-md-right">
+                            <span className="text-primary">3 Years</span>
+                        </div>
+                    </div>
                     {
                         EXPERIENCE.map(
                             (obj, index) => (
