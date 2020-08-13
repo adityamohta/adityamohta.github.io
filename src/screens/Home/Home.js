@@ -9,6 +9,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Awards from "./components/Awards";
 import Interests from "./components/Interests";
+import Projects from "./components/Projects";
 
 
 const Home = () => (
@@ -20,6 +21,8 @@ const Home = () => (
             <Experience/>
             {/*<hr className="m-0"/>*/}
             {/*<Education/>*/}
+            <hr className="m-0"/>
+            <Projects/>
             <hr className="m-0"/>
             <Skills/>
             <hr className="m-0"/>

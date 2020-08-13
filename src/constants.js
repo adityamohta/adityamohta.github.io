@@ -65,6 +65,7 @@ export const SKILLS = [
     'Nginx ・ Supervisor',
 ];
 
+
 export const WORKFLOWS = [
     'python・django・djangorestframework・postgresql・celery・redis・gunicorn・supervisor・nginx',
     'es7・react・redux・redux-saga・react-native・webpack',
