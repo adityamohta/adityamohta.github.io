@@ -3,7 +3,7 @@ import React from "react";
 export const FIRST_NAME = 'Aditya';
 export const LAST_NAME = 'Mohta';
 export const NAME = 'Aditya Mohta';
-export const EMAIL = 'aditya@hfactorial.com';
+export const EMAIL = 'kumaraditya.mohta@gmail.com';
 // export const DESCRIPTION = `I am experienced in leveraging agile frameworks to provide a robust synopsis for high level
 // overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.`;
 export const DESCRIPTION = `3 years of professional experience in Full-stack development. Proficient in liaising with key stakeholders including team members & remote clients to effectively conduct requirement gathering and optimize solutions as per the requirements.`;
