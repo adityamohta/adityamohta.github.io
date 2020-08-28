@@ -21,13 +21,18 @@ export default class Projects extends PureComponent {
                         </small>
                     </p>
                     <p>
-                        Chiku is your personal assistant to help you keep track of your day-to-day activities and
-                        inspire you along the way to keep making your life better. <br/>
+                        Chiku is a personal diary app, available on both <a
+                        href="https://play.google.com/store/apps/details?id=app.chiku"
+                        target="_blank">Android</a> and <a href="https://apps.apple.com/us/app/chiku/id1477484178"
+                                                           target="_blank">iOS</a>, to help users keep track of their
+                        day-to-day activities and inspire them along the way to keep making their life better.
+                        (chiku.app) <br/>
                     </p>
                     <p>
-                        <b>Story</b> <br/>In May 2019, I started looking for a diary app for my daily use.
-                        After trying out many apps I wasn't satisfied with any. Therefore, I finally decided to create an app myself with all the features that I wanted.
-                        Spent few months on its development as a side project & decided to publish it and it now has more than <b>10,000 happy users</b> all over the world.
+                        <b>Story</b> <br/>In May 2019, I started looking for a diary app for my daily use. However, I
+                        wasn’t satisfied with any of the existing solutions. So I decided to create a journaling app
+                        which I would like to use. Spent a few months on its development as a side project and it now
+                        has <b>10,000+ happy users</b> worldwide with <b>4.7+</b> rating.
                     </p>
                     <p>
                         Tech Stack:
@@ -47,7 +52,7 @@ export default class Projects extends PureComponent {
                         </li>
                         <li>
                             <i className="fa-li fa fa-circle"/>
-                            Website : Ghost
+                            Website : Ghost CMS
                         </li>
                     </ul>
                 </div>

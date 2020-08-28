@@ -32,9 +32,6 @@ export default class Skills extends PureComponent {
                             <i className="fab fa-sass"/>
                         </li>
                         <li className="list-inline-item">
-                            <i className="fab fa-less"/>
-                        </li>
-                        <li className="list-inline-item">
                             <i className="fab fa-node-js"/>
                         </li>
                         <li className="list-inline-item">
@@ -60,19 +57,19 @@ export default class Skills extends PureComponent {
                         }
                     </ul>
 
-                    <div className="subheading mb-3">Workflow</div>
-                    <ul className="fa-ul mb-0">
-                        {
-                            WORKFLOWS.map(
-                                (workflow, index) => (
-                                    <li key={index}>
-                                        <i className="fa-li fa fa-check"/>
-                                        {workflow}
-                                    </li>
-                                )
-                            )
-                        }
-                    </ul>
+                    {/*<div className="subheading mb-3">Workflow</div>*/}
+                    {/*<ul className="fa-ul mb-0">*/}
+                    {/*    {*/}
+                    {/*        WORKFLOWS.map(*/}
+                    {/*            (workflow, index) => (*/}
+                    {/*                <li key={index}>*/}
+                    {/*                    <i className="fa-li fa fa-check"/>*/}
+                    {/*                    {workflow}*/}
+                    {/*                </li>*/}
+                    {/*            )*/}
+                    {/*        )*/}
+                    {/*    }*/}
+                    {/*</ul>*/}
                 </div>
             </section>
         )

@@ -6,9 +6,7 @@ export const NAME = 'Aditya Mohta';
 export const EMAIL = 'aditya@hfactorial.com';
 // export const DESCRIPTION = `I am experienced in leveraging agile frameworks to provide a robust synopsis for high level
 // overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.`;
-export const DESCRIPTION = `Hello, I am a full-stack developer, experienced in Android, IOS, Web App and Backend development. 
-I am passionate about what I do and always give my 100%. When I undertake a project or task, I don't just complete it, 
-I go the extra mile and make it better than requested.`;
+export const DESCRIPTION = `3 years of professional experience in Full-stack development. Proficient in liaising with key stakeholders including team members & remote clients to effectively conduct requirement gathering and optimize solutions as per the requirements.`;
 export const LINKEDIN = 'https://www.linkedin.com/in/kumaradityamohta';
 export const GITHUB = 'https://github.com/adityamohta';
 // export const RESUME = '/assets/doc/cv.pdf';
@@ -16,44 +14,27 @@ export const RESUME = '/assets/img/resume.png';
 
 export const EXPERIENCE = [
     {
-        title: 'Senior Software Developer',
-        company: 'HEALTH FACTORIAL SOLUTIONS',
-        description: `
-            Built APIs on Django Framework. Setup production server on AWS.
-            Built an e-commerce web app using React.js.
-        `,
+        title: 'Tech Lead & Full Stack Developer',
+        company: 'Misters',
+        description: `Django, PostgreSQL, React, Javascript, HTML, CSS, AWS, Git, Redis, NodeJS`,
         date: 'May 2019 - Present',
     },
     {
-        title: 'Software Developer',
+        title: 'Software Engineer',
         company: 'TARDIGRADE HEALTHTECH',
-        description: `
-            Built a generic chat bot builder tool. Built APIs on Django Framework, 
-            Implemented Task Queuing to optimize server performance. 
-            Graph data analytics, scheduler and caching.
-            Built 'The Good Doctor' app using React Native. Setup production server on AWS.
-        `,
+        description: `Django, PostgreSQL, React Native, AWS, Git, Redis, NodeJS`,
         date: 'September 2018 - May 2019',
     },
     {
-        title: 'Software Developer',
+        title: 'Associate Software Engineer',
         company: 'AURIGA IT',
-        description: `
-            Built landing page for Opentalk on React.js. 
-            Built Rajasthan government's e-sakhi app on React Native.
-            Built Android, IOS, Web app and backend for ChallengeForGreen using React | React Native | Django.
-        `,
+        description: `Django, PostgreSQL, React Native, AWS, Git, Redis, NodeJS`,
         date: 'December 2017 - September 2018',
     },
     {
-        title: 'Full Stack Developer',
+        title: 'Software Engineer Intern',
         company: 'HIGHWAY COOKIE',
-        description: `
-            Built APIs on Django Framework, Implemented Task Queuing to optimize server performance. 
-            Graph data analytics, scheduler and caching. 
-            Built landing page for clients on Angular.js to get live tracking data of devices.
-            Built interface for real-time device tracker. Setup production server on AWS.
-        `,
+        description: `AngularJS, Django, Git, Google Cloud Platform`,
         date: 'June 2016 - September 2017',
     }
 ];
@@ -62,7 +43,7 @@ export const SKILLS = [
     'Python ・ Django',
     'JavaScript ・ React.js ・ React Native',
     'PostgreSQL ・ Redis ・ Realm',
-    'Nginx ・ Supervisor',
+    // 'Nginx ・ Supervisor',
 ];
 
 
