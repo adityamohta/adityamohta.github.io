@@ -2,7 +2,9 @@
 import React from "react";
 // My Imports
 import {
+    Dynasty,
     Home,
+    Error404,
 } from './screens';
 
 
@@ -12,4 +14,13 @@ export default [
         path: '/',
         component: Home,
     },
+    {
+        exact: true,
+        path: '/dynasty/',
+        component: Dynasty,
+    },
+    {
+        path: '*',
+        component: Error404,
+    }
 ];

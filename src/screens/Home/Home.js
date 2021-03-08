@@ -13,7 +13,7 @@ import Projects from "./components/Projects";
 
 
 const Home = () => (
-    <div>
+    <div className="home">
         <SideNav/>
         <div className="container-fluid p-0">
             <Header/>
