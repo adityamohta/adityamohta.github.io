@@ -31,9 +31,9 @@ export default class SideNav extends PureComponent {
                         {/*<li className="nav-item">*/}
                             {/*<a className="nav-link js-scroll-trigger" href="#education">Education</a>*/}
                         {/*</li>*/}
-                        <li className="nav-item">
-                            <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                        {/*    <a className="nav-link js-scroll-trigger" href="#skills">Skills</a>*/}
+                        {/*</li>*/}
                         <li className="nav-item">
                             <a className="nav-link js-scroll-trigger" href="#interests">Interests</a>
                         </li>

@@ -16,7 +16,7 @@ export default class Header extends PureComponent {
                     </h1>
                     <div className="subheading mb-5">
                         {/*3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·*/}
-                        <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+                        <a href={`mailto:${EMAIL}`} className="text-small">{EMAIL}</a>
                     </div>
                     <p className="lead mb-5">
                         {DESCRIPTION}

@@ -12,7 +12,7 @@ export default class Experience extends PureComponent {
                     <div className="d-flex align-items-start justify-content-between">
                         <h2 className="mb-5">Experience</h2>
                         <div className="pt-2 resume-date text-md-right">
-                            <span className="text-primary">4 Years</span>
+                            <span className="text-primary">5 Years</span>
                         </div>
                     </div>
                     {

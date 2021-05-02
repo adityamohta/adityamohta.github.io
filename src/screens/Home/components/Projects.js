@@ -32,7 +32,7 @@ export default class Projects extends PureComponent {
                         <b>Story</b> <br/>In May 2019, I started looking for a diary app for my daily use. However, I
                         wasn’t satisfied with any of the existing solutions. So I decided to create a journaling app
                         which I would like to use. Spent a few months on its development as a side project and it now
-                        has <b>10,000+ happy users</b> worldwide with <b>4.7+</b> rating.
+                        has <b>40,000+ happy users</b> worldwide with <b>4.6+</b> rating.
                     </p>
                     <p>
                         Tech Stack:

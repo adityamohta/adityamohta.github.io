@@ -1,12 +1,12 @@
 import React from "react";
 
-export const FIRST_NAME = 'Aditya';
+export const FIRST_NAME = 'Kumar Aditya';
 export const LAST_NAME = 'Mohta';
 export const NAME = 'Aditya Mohta';
 export const EMAIL = 'kumaraditya.mohta@gmail.com';
 // export const DESCRIPTION = `I am experienced in leveraging agile frameworks to provide a robust synopsis for high level
 // overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.`;
-export const DESCRIPTION = `3 years of professional experience in Full-stack development. Proficient in liaising with key stakeholders including team members & remote clients to effectively conduct requirement gathering and optimize solutions as per the requirements.`;
+export const DESCRIPTION = `5 years of professional experience in Full-stack development. Proficient in liaising with key stakeholders including team members & remote clients to effectively conduct requirement gathering and optimize solutions as per the requirements.`;
 export const LINKEDIN = 'https://www.linkedin.com/in/kumaradityamohta';
 export const GITHUB = 'https://github.com/adityamohta';
 // export const RESUME = '/assets/doc/cv.pdf';
@@ -16,7 +16,7 @@ export const EXPERIENCE = [
     {
         title: 'Tech Lead & Full Stack Developer',
         company: 'Misters',
-        description: `Django, PostgreSQL, React, Javascript, HTML, CSS, AWS, Git, Redis, NodeJS`,
+        description: `Django, PostgreSQL, React, Javascript, HTML, CSS, AWS, Docker, Git, Redis, NodeJS`,
         date: 'May 2019 - Present',
     },
     {
