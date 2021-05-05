@@ -128,7 +128,7 @@ class CovidVaccineTracker extends React.Component {
 
   handleFrequencyChange = (e) => {
     let value = e.target.value
-    if (value > 600) {
+    if (value > 119) {
       this.setState({updateFrequency: e.target.value})
       clearInterval(this.interval);
       this.interval = setInterval(this.handleCheckVaccineAvailability, value * 1000);
