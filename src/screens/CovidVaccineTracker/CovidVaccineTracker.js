@@ -10,17 +10,18 @@ class CovidVaccineTracker extends React.Component {
 
   state = {
     title: '',
-    notificationSound: false,
+    notificationSound: true,
     districts: [],
     states: [],
     availableCenters: [],
     district_id: 140,
     state_id: 9,
     age: 18,
+    updateFrequency: 60
   }
 
   async componentDidMount() {
-    this.interval = setInterval(this.handleCheckVaccineAvailability, 20 * 1000); // every 20 seconds
+    this.interval = setInterval(this.handleCheckVaccineAvailability, this.state.updateFrequency * 1000);
     await this.getStates();
     await this.getDistricts(this.state.state_id)
     this.handleSelectDistrict(140)
@@ -125,6 +126,15 @@ class CovidVaccineTracker extends React.Component {
     }
   }
 
+  handleFrequencyChange = (e) => {
+    let value = e.target.value
+    if (value > 19) {
+      this.setState({updateFrequency: e.target.value})
+      clearInterval(this.interval);
+      this.interval = setInterval(this.handleCheckVaccineAvailability, value * 1000);
+    }
+  }
+
   handleNotification = (districtName, age) =>  {
     if(this.state.ignore) {
       return;
@@ -149,7 +159,7 @@ class CovidVaccineTracker extends React.Component {
   }
 
   render() {
-    let {state_id, district_id, states, districts, age, availableCenters, notificationSound} = this.state;
+    let {state_id, district_id, states, districts, age, availableCenters, notificationSound, updateFrequency} = this.state;
 
     availableCenters = availableCenters.filter(availableCenter => availableCenter.min_age_limit <= age)
     availableCenters.sort((a,b) => b.available_capacity - a.available_capacity)
@@ -162,6 +172,11 @@ class CovidVaccineTracker extends React.Component {
             <label htmlFor="sound">Notification Sound</label>
             <input id="sound" type="checkbox" checked={notificationSound}
                    onChange={() => this.setState({notificationSound: !notificationSound})}/>
+          </div>
+          <div>
+            <label htmlFor="frequency">Update Frequency (in seconds)</label>
+            <input id="frequency" type="number" value={updateFrequency}
+                   onChange={this.handleFrequencyChange}/>
           </div>
           <div>
             <label htmlFor="age">Age</label>
