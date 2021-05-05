@@ -5,6 +5,7 @@ import {
     Dynasty,
     Home,
     Error404,
+    CovidVaccineTracker,
 } from './screens';
 
 
@@ -18,6 +19,11 @@ export default [
         exact: true,
         path: '/dynasty/',
         component: Dynasty,
+    },
+    {
+        exact: true,
+        path: '/covid-vaccine-tracker/',
+        component: CovidVaccineTracker
     },
     {
         path: '*',
