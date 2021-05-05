@@ -17,7 +17,7 @@ class CovidVaccineTracker extends React.Component {
     district_id: 140,
     state_id: 9,
     age: 18,
-    updateFrequency: 60
+    updateFrequency: 600
   }
 
   async componentDidMount() {
@@ -128,7 +128,7 @@ class CovidVaccineTracker extends React.Component {
 
   handleFrequencyChange = (e) => {
     let value = e.target.value
-    if (value > 19) {
+    if (value > 600) {
       this.setState({updateFrequency: e.target.value})
       clearInterval(this.interval);
       this.interval = setInterval(this.handleCheckVaccineAvailability, value * 1000);
@@ -150,7 +150,7 @@ class CovidVaccineTracker extends React.Component {
       icon: icon,
       lang: 'en',
       dir: 'ltr',
-      sound: './sound.mp3'  // no browsers supported https://developer.mozilla.org/en/docs/Web/API/notification/sound#Browser_compatibility
+      sound: '/assets/mp3/ring.mp3'  // no browsers supported https://developer.mozilla.org/en/docs/Web/API/notification/sound#Browser_compatibility
     }
     this.setState({
       title: title,
