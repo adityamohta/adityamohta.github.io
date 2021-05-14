@@ -11,7 +11,7 @@ export default class SideNav extends PureComponent {
                     <span className="d-block d-lg-none navbar-name">{NAME}</span>
                     <span className="d-none d-lg-block">
                     <img className="img-fluid img-profile rounded-circle mx-auto mb-2"
-                         src="/assets/img/user_icon3.jpg"
+                         src="/assets/img/me.jpeg"
                          alt=""/>
                   </span>
                 </a>
