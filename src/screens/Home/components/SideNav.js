@@ -10,9 +10,7 @@ export default class SideNav extends PureComponent {
                 <a className="navbar-brand js-scroll-trigger" href="#">
                     <span className="d-block d-lg-none navbar-name">{NAME}</span>
                     <span className="d-none d-lg-block">
-                    <img className="img-fluid img-profile rounded-circle mx-auto mb-2"
-                         src="/assets/img/me.jpeg"
-                         alt=""/>
+                    <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="/assets/img/me.jpeg" alt=""/>
                   </span>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
