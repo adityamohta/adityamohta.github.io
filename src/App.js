@@ -2,7 +2,7 @@ import "babel-polyfill";
 import React from "react";
 import {Route, Switch} from 'react-router';
 import routes from './routes';
-import './App.sass';
+import './App.scss';
 
 const App = () => (
     <div>
