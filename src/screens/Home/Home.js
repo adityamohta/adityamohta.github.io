@@ -29,7 +29,7 @@ const Home = () => (
       including team members & remote clients to effectively conduct requirement gathering and optimize solutions as per
       the requirements.
       <br/><br/>
-      Currently working at misters.in as a Tech Lead & Full Stack Developer
+      Currently working at Conjura as a Software Engineer
       <br/><br/>
       I am also a solo developer & founder of a mental health app called:
       <br/>
