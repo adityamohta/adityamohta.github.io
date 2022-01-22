@@ -1,10 +1,6 @@
 ul {
   list-style-type: disc;
   padding-left: 20px;
-
-  li {
-    color: #444444;
-  }
 }
 
 a {
@@ -12,12 +8,7 @@ a {
 }
 
 p {
-  color: #444444;
   text-align: justify;
-}
-
-span.highlight {
-  color: #2777b7;
 }
 
 hr {
@@ -35,7 +26,7 @@ hr {
   margin: 10px;
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   }
 }
