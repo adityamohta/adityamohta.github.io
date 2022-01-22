@@ -1,32 +1,17 @@
 // External Imports
 import React from "react";
 // My Imports
-import {
-    Dynasty,
-    Home,
-    Error404,
-    CovidVaccineTracker,
-} from './screens';
-
+import Home from "./screens/Home";
+import Error404 from "./screens/Error404";
 
 export default [
-    {
-        exact: true,
-        path: '/',
-        component: Home,
-    },
-    {
-        exact: true,
-        path: '/dynasty/',
-        component: Dynasty,
-    },
-    {
-        exact: true,
-        path: '/covid-vaccine-tracker/',
-        component: CovidVaccineTracker
-    },
-    {
-        path: '*',
-        component: Error404,
-    }
+  {
+    exact: true,
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "*",
+    element: <Error404 />,
+  },
 ];
