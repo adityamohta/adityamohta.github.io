@@ -43,11 +43,11 @@ const Home = () => {
 
   return (
     <div className="bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-200">
-      <div className="text-right p-10">
+      <div className="text-right pt-10 pr-10">
         <DarkModeButton checked={!darkMode} onClick={toggleDarkMode} />
       </div>
       <div className="max-w-screen-md pb-14 px-6 mx-auto">
-        <div className="flex pb-5 flex-col items-center md:flex-row ">
+        <div className="flex flex-col items-center md:flex-row ">
           <img className="flex object-contain max-w-[200px] max-h-[200px] rounded-2xl" {...Images.me} />
           <div className="flex-auto pt-5 md:py-0 md:px-5">
             <h1 className="text-2xl md:text-4xl mt-4 md:mt-0 uppercase font-bold tracking-wide">
