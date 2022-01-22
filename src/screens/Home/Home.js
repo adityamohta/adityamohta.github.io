@@ -25,8 +25,10 @@ const Home = () => {
 
   useEffect(() => {
     if (darkMode) {
+      localStorage.setItem("color-theme", "dark");
       document.documentElement.classList.add("dark");
     } else {
+      localStorage.setItem("color-theme", "light");
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
