@@ -48,26 +48,24 @@ const Home = () => {
         <div className="flex pb-5 flex-col items-center md:flex-row ">
           <img className="flex object-contain max-w-[200px] max-h-[200px] rounded-2xl" {...Images.me} />
           <div className="flex-auto py-5 md:py-0 md:px-5">
-            <h1 className="text-base md:text-4xl my-4 md:mt-0 uppercase font-bold tracking-wide">
+            <h1 className="text-base md:text-4xl mt-4 md:mt-0 uppercase font-bold tracking-wide">
               <span className="dark:text-slate-100">Kumar Aditya </span>
               <span className="text-cyan-500 dark:text-cyan-300">Mohta</span>
             </h1>
+            <p className="text-slate-500 dark:text-slate-400 mb-4">
+              {"Software Engineer @ "}
+              <a href="https://conjura.com" target="_blank">
+                Conjura
+              </a>
+            </p>
+
             <p className="mb-2">
               I am passionate about designing, problem-solving, and learning new technologies. Experienced in full-stack
               development, working with startups, building products from scratch, and scaling them up.
             </p>
-            <p className="text-slate-500 dark:text-slate-400">
-              Working at{" "}
-              <a href="https://conjura.com" target="_blank">
-                Conjura
-              </a>{" "}
-              as a Software Engineer.
-            </p>
           </div>
         </div>
-        <a href="https://github.com/adityamohta" target="_blank">
-          <div className="calendar">...</div>
-        </a>
+        <hr className="dark:border-slate-700 border-slate-200	" />
         <div className="">
           <h6 className="mb-3">
             Solo developer, designer & founder of a micro startup: <b>“Chiku — Journal / Diary & Mood Tracker”</b>
@@ -89,7 +87,7 @@ const Home = () => {
           </ul>
         </div>
 
-        <hr />
+        <hr className="dark:border-slate-700 border-slate-200	" />
         {/*<p>*/}
         {/*  5 years of professional experience in Full-stack development. Proficient in liaising with key stakeholders,*/}
         {/*  including team members & remote clients, to effectively conduct requirement gathering and optimize solutions as*/}
@@ -108,6 +106,8 @@ const Home = () => {
           When forced outdoors, I love playing badminton.
         </p>
 
+        <hr className="dark:border-slate-700 border-slate-200	" />
+
         <div className="social-icons">
           <a href="https://github.com/adityamohta" target="_blank" className="social-icon">
             <img className="rounded-xl" {...Images.socialIcons.github} />
@@ -122,6 +122,10 @@ const Home = () => {
             <img className="rounded-xl" {...Images.socialIcons.chess} />
           </a>
         </div>
+
+        <a href="https://github.com/adityamohta" target="_blank">
+          <div className="calendar">...</div>
+        </a>
       </div>
     </div>
   );
