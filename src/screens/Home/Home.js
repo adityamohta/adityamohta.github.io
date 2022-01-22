@@ -67,7 +67,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <hr className="dark:border-slate-700 border-slate-200	" />
+        <hr className="dark:border-slate-700 border-slate-200	my-5" />
         <div className="">
           <h6 className="mb-3">
             Solo developer, designer & founder of a micro startup: <b>“Chiku — Journal / Diary & Mood Tracker”</b>
@@ -89,7 +89,7 @@ const Home = () => {
           </ul>
         </div>
 
-        <hr className="dark:border-slate-700 border-slate-200	" />
+        <hr className="dark:border-slate-700 border-slate-200 my-5" />
         {/*<p>*/}
         {/*  5 years of professional experience in Full-stack development. Proficient in liaising with key stakeholders,*/}
         {/*  including team members & remote clients, to effectively conduct requirement gathering and optimize solutions as*/}
@@ -108,7 +108,7 @@ const Home = () => {
           When forced outdoors, I love playing badminton.
         </p>
 
-        <hr className="dark:border-slate-700 border-slate-200	" />
+        <hr className="dark:border-slate-700 border-slate-200	my-5" />
 
         <div className="social-icons">
           <a href="https://github.com/adityamohta" target="_blank" className="social-icon">
