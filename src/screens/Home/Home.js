@@ -32,9 +32,9 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="calendar">...</div>
-      <hr />
-
+      <a href="https://github.com/adityamohta" target="_blank">
+        <div className="calendar">...</div>
+      </a>
       <div>
         <h6 className="mb-3">
           Solo developer, designer & founder of a micro startup: <b>“Chiku — Journal / Diary & Mood Tracker”</b>

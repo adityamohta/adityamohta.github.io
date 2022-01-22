@@ -31,14 +31,16 @@ rect.ContributionCalendar-day[data-level='4'] {
 }
 
 .calendar {
-    font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px;
     text-align: center;
     margin: 0 auto;
+    padding-bottom: 20px;
+    cursor: pointer;
 
     .float-right.color-fg-muted {
         display: none;
+    }
+    .js-calendar-graph-svg > g {
+        transform: translate(0, 15px);
     }
 }
 
@@ -199,4 +201,5 @@ h2.f4.text-normal.mb-3 {
 text.ContributionCalendar-label {
     fill: #ccc;
     font-size: 11px;
+    display: none;
 }
