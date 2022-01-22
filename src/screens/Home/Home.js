@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
     <div className="bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-200">
-      <div className="text-right pt-10 pr-10">
+      <div className="text-right pt-10 pr-10 pb-4 md:pb-0">
         <DarkModeButton checked={!darkMode} onClick={toggleDarkMode} />
       </div>
       <div className="max-w-screen-md pb-14 px-6 mx-auto">
