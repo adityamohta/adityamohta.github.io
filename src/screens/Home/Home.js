@@ -50,7 +50,7 @@ const Home = () => {
         <div className="flex pb-5 flex-col items-center md:flex-row ">
           <img className="flex object-contain max-w-[200px] max-h-[200px] rounded-2xl" {...Images.me} />
           <div className="flex-auto py-5 md:py-0 md:px-5">
-            <h1 className="text-base md:text-4xl mt-4 md:mt-0 uppercase font-bold tracking-wide">
+            <h1 className="text-2xl md:text-4xl mt-4 md:mt-0 uppercase font-bold tracking-wide">
               <span className="dark:text-slate-100">Kumar Aditya </span>
               <span className="text-cyan-500 dark:text-cyan-300">Mohta</span>
             </h1>
