@@ -101,7 +101,7 @@ const Home = () => {
           are my favourites. When forced outdoors, I love playing badminton.
         </p>
 
-        <div className="social-icons mb-4">
+        <div className="social-icons mb-2">
           <a href="https://github.com/adityamohta" target="_blank" className="social-icon">
             <img className="rounded-xl" {...Images.socialIcons.github} />
           </a>
