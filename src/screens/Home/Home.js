@@ -47,7 +47,7 @@ const Home = () => {
         <DarkModeButton checked={!darkMode} onClick={toggleDarkMode} />
       </div>
       <div className="max-w-screen-md pb-14 px-6 mx-auto">
-        <div className="flex flex-col items-center md:flex-row ">
+        <div className="flex flex-col items-center md:flex-row pb-2">
           <img className="flex object-contain max-w-[200px] max-h-[200px] rounded-2xl" {...Images.me} />
           <div className="flex-auto pt-5 md:py-0 md:px-5">
             <h1 className="text-2xl md:text-4xl mt-4 md:mt-0 uppercase font-bold tracking-wide">
@@ -62,7 +62,7 @@ const Home = () => {
             </p>
 
             <p className="mb-2">
-              I am passionate about designing, problem-solving, and learning new technologies. Experienced in full-stack
+              Passionate about designing, problem-solving, and learning new technologies. Experienced in full-stack
               development, working with startups, building products from scratch, and scaling them up.
             </p>
           </div>
@@ -96,21 +96,12 @@ const Home = () => {
         {/*  per the requirements.*/}
         {/*  <br />*/}
         {/*</p>*/}
-
-        <h2 className="uppercase font-bold tracking-wide text-2xl mb-3">Interests</h2>
         <p className="mb-6">
-          Apart from being a web developer, I enjoy being indoors playing chess and my musical instruments; Guitar and
-          Flute are my favourites. In addition, I follow several sci-fi and fantasy genre movies and television shows
-          and spend a large amount of my free time exploring the latest technology advancements in the mobile and web
-          development world.
-          <br />
-          <br />
-          When forced outdoors, I love playing badminton.
+          Apart from being an engineer, I enjoy being indoors playing chess and my music instruments; Guitar and Flute
+          are my favourites. When forced outdoors, I love playing badminton.
         </p>
 
-        <hr className="dark:border-slate-700 border-slate-200	my-5" />
-
-        <div className="social-icons">
+        <div className="social-icons mb-4">
           <a href="https://github.com/adityamohta" target="_blank" className="social-icon">
             <img className="rounded-xl" {...Images.socialIcons.github} />
           </a>
@@ -124,7 +115,6 @@ const Home = () => {
             <img className="rounded-xl" {...Images.socialIcons.chess} />
           </a>
         </div>
-
         <a href="https://github.com/adityamohta" target="_blank">
           <div className="calendar">...</div>
         </a>
