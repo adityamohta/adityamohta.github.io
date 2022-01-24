@@ -97,8 +97,7 @@ const Home = () => {
         {/*  <br />*/}
         {/*</p>*/}
         <p className="mb-6">
-          Apart from being an engineer, I enjoy being indoors playing chess and my music instruments; Guitar and Flute
-          are my favourites. When forced outdoors, I love playing badminton.
+          Besides being an engineer, I sleep... a lot! and ❤️&nbsp; ♟️&nbsp; 🏃🏻&nbsp; 🥏&nbsp; 🏸️&nbsp; 🏓
         </p>
 
         <div className="social-icons mb-2">
