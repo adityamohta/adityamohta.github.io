@@ -17,3 +17,6 @@ code {
     monospace;
 }
 
+div.width-full.f6.px-0.px-md-5.py-1:last-child {
+  display: none;
+}
