@@ -2,7 +2,7 @@ import github from "./github@3x.jpg";
 import linkedin from "./linkedin@3x.jpg";
 import behance from "./behance@3x.jpg";
 import chess from "./chess-com@3x.jpg";
-import me from "./me-2.jpg";
+import me from "./me.jpg";
 
 const Images = {
   me: {
