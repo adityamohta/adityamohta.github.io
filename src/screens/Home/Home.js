@@ -53,10 +53,14 @@ const Home = () => {
 
   return (
     <div className="antialiased bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-200 min-h-screen">
-      <div className="md:py-10"></div>
+      <div className="py-10"></div>
       <div className="max-w-screen-sm md:max-w-screen-md pb-14 px-6 mx-auto">
         <div className="flex flex-col items-center pb-2 relative">
-          <img className="flex object-contain max-w-[150px] max-h-[150px] rounded-full" {...Images.me} />
+          <img
+            className="flex object-contain max-w-[150px] max-h-[150px] rounded-full"
+            src={Images.me.src}
+            alt={Images.me.alt}
+          />
           <div className="flex-auto text-center">
             <h1 className="text-2xl md:text-4xl font-bold tracking-wid mt-2">
               <span className="dark:text-slate-100">Kumar Aditya Mohta</span>
