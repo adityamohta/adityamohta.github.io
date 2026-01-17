@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Software Engineer">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0d1117">
   <title>Kumar Aditya Mohta</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -12,20 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
   <link rel="stylesheet" href="styles.css">
-  <script>
-    if (localStorage.getItem('color-theme') === 'dark' ||
-        (!localStorage.getItem('color-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-  </script>
 </head>
-<body class="antialiased min-h-screen bg-white dark:bg-slate-900 text-slate-500 dark:text-slate-200">
+<body class="antialiased min-h-screen bg-[#0d1117] text-[#c9d1d9]">
   <div class="py-10"></div>
   <main class="max-w-screen-sm md:max-w-screen-md mx-auto px-6 py-10 pb-14">
     <!-- Profile Section -->
@@ -36,21 +25,83 @@
         class="max-w-[150px] max-h-[150px] rounded-full object-contain mb-4"
       >
 
-      <h1 class="text-2xl md:text-4xl font-bold text-slate-400 dark:text-slate-100">
+      <h1 class="text-2xl md:text-4xl font-bold text-[#f0f6fc] mb-4">
         Kumar Aditya Mohta
       </h1>
-      <p class="text-slate-500 dark:text-slate-400 mb-4 text-center mb-4">
-        Staff Engineer @ <a href="https://conjura.com" target="_blank" rel="noopener noreferrer" class="underline">Conjura</a>
-        <button id="theme-toggle" class="ml-2 text-xl" aria-label="Toggle dark mode"></button>
-      </p>
     </div>
 
     <!-- Bio Section -->
-    <div class="text-slate-500 dark:text-slate-200 text-center">
+    <div class="text-[#c9d1d9] text-center">
       <p>
-        I am committed to design, problem-solving, and learning new technologies. I have experience in full-stack development, working with startups, and managing product development from inception to scalability. Outside of work, I enjoy running, playing chess, frisbee, badminton, and soccer.
+        Engineer at heart who enjoys building products and contributing to open source. Currently working as a Staff Engineer at Conjura, and maintaining Chiku.app since 2019 with 200k+ users. Outside of work, I like badminton, football, and chess.
       </p>
     </div>
+
+    <!-- Contributions -->
+    <div class="mt-12">
+      <h2 class="text-lg font-semibold text-[#f0f6fc] mb-6 text-center">Contributions</h2>
+      <div class="product-grid">
+        <a href="https://conjura.com" target="_blank" rel="noopener noreferrer" class="product-card">
+          <img src="images/conjura.png" alt="Conjura" class="product-logo">
+          <div class="product-info">
+            <h3 class="product-name">Conjura</h3>
+            <p class="product-desc">E-commerce analytics platform</p>
+            <span class="product-role">Staff Engineer</span>
+          </div>
+        </a>
+        <a href="https://chiku.app" target="_blank" rel="noopener noreferrer" class="product-card">
+          <div class="chiku-logo">
+            <div class="chiku-bg-circle"></div>
+            <img class="chiku-bg" src="images/chiku-bg.png" alt="Chiku">
+            <img class="chiku-eyes" src="images/chiku-eyes.png" alt="">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Chiku</h3>
+            <p class="product-desc">Side project running since 2019</p>
+            <span class="product-role">Founder</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Open Source -->
+    <div class="mt-12">
+      <h2 class="text-lg font-semibold text-[#f0f6fc] mb-6 text-center">Open Source</h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+
+    <script>
+      fetch('contributions.json')
+        .then(response => response.json())
+        .then(contributions => {
+          const timeline = document.getElementById('timeline');
+          let currentYear = null;
+
+          contributions.forEach(pr => {
+            if (pr.year !== currentYear) {
+              currentYear = pr.year;
+              const yearDiv = document.createElement('div');
+              yearDiv.className = 'timeline-year';
+              yearDiv.textContent = currentYear;
+              timeline.appendChild(yearDiv);
+            }
+
+            const item = document.createElement('div');
+            item.className = 'timeline-item';
+            item.innerHTML = `
+              <div class="timeline-dot ${pr.status}"></div>
+              <div class="timeline-content">
+                <a href="${pr.url}" target="_blank" rel="noopener noreferrer">
+                  <span class="timeline-repo">${pr.repo}</span>
+                  <span class="timeline-title">${pr.title}</span>
+                </a>
+                <span class="timeline-date">${pr.date}</span>
+              </div>
+            `;
+            timeline.appendChild(item);
+          });
+        });
+    </script>
 
     <!-- Social Icons -->
     <div class="social-icons">
@@ -72,22 +123,5 @@
     </div>
   </main>
 
-  <script>
-    // Dark mode toggle
-    const themeToggle = document.getElementById('theme-toggle');
-
-    function updateThemeIcon() {
-      themeToggle.textContent = document.documentElement.classList.contains('dark') ? '🌒' : '🌔';
-    }
-
-    updateThemeIcon();
-
-    themeToggle.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      const isDark = document.documentElement.classList.contains('dark');
-      localStorage.setItem('color-theme', isDark ? 'dark' : 'light');
-      updateThemeIcon();
-    });
-  </script>
 </body>
 </html>

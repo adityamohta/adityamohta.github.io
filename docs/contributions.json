@@ -1,0 +1,130 @@
+[
+  {
+    "repo": "airbytehq/airbyte",
+    "title": "fix: GB marketplace_id config transformation",
+    "url": "https://github.com/airbytehq/airbyte/pull/71037",
+    "date": "Dec 2025",
+    "year": 2025,
+    "status": "open"
+  },
+  {
+    "repo": "langchain-ai/langchain",
+    "title": "fix: incorrect input_tokens counting while streaming",
+    "url": "https://github.com/langchain-ai/langchain/pull/32525",
+    "date": "Aug 2025",
+    "year": 2025,
+    "status": "closed"
+  },
+  {
+    "repo": "mswjs/mswjs.io",
+    "title": "fix: websockets docs typo",
+    "url": "https://github.com/mswjs/mswjs.io/pull/478",
+    "date": "Jul 2025",
+    "year": 2025,
+    "status": "merged"
+  },
+  {
+    "repo": "airbytehq/airbyte",
+    "title": "source-ebay-fulfillment connector",
+    "url": "https://github.com/airbytehq/airbyte/pull/60272",
+    "date": "May 2025",
+    "year": 2025,
+    "status": "merged"
+  },
+  {
+    "repo": "airbytehq/airbyte",
+    "title": "source-ebay-finance connector",
+    "url": "https://github.com/airbytehq/airbyte/pull/56941",
+    "date": "Apr 2025",
+    "year": 2025,
+    "status": "merged"
+  },
+  {
+    "repo": "airbytehq/airbyte",
+    "title": "fix: amazon-seller-partner dataStartTime after dataEndTime",
+    "url": "https://github.com/airbytehq/airbyte/pull/46887",
+    "date": "Oct 2024",
+    "year": 2024,
+    "status": "closed"
+  },
+  {
+    "repo": "aws/chalice",
+    "title": "feat: maximum_concurrency option in on_sqs_message",
+    "url": "https://github.com/aws/chalice/pull/2104",
+    "date": "May 2024",
+    "year": 2024,
+    "status": "merged"
+  },
+  {
+    "repo": "johnsonsu/react-native-sound-player",
+    "title": "fix: build failures on higher SDK versions",
+    "url": "https://github.com/johnsonsu/react-native-sound-player/pull/161",
+    "date": "Oct 2023",
+    "year": 2023,
+    "status": "merged"
+  },
+  {
+    "repo": "terraform-aws-modules/terraform-aws-cloudwatch",
+    "title": "docs: fixed example link in readme",
+    "url": "https://github.com/terraform-aws-modules/terraform-aws-cloudwatch/pull/55",
+    "date": "Apr 2023",
+    "year": 2023,
+    "status": "merged"
+  },
+  {
+    "repo": "Pithikos/python-websocket-server",
+    "title": "feat: add headers & query params to handler",
+    "url": "https://github.com/Pithikos/python-websocket-server/pull/115",
+    "date": "Jan 2023",
+    "year": 2023,
+    "status": "open"
+  },
+  {
+    "repo": "SudoPlz/sp-react-native-in-app-updates",
+    "title": "chore: update onStatusUpdate example comment",
+    "url": "https://github.com/SudoPlz/sp-react-native-in-app-updates/pull/121",
+    "date": "Dec 2022",
+    "year": 2022,
+    "status": "merged"
+  },
+  {
+    "repo": "mswjs/interceptors",
+    "title": "chore: remove @types/xmldom stale dependency",
+    "url": "https://github.com/mswjs/interceptors/pull/315",
+    "date": "Dec 2022",
+    "year": 2022,
+    "status": "merged"
+  },
+  {
+    "repo": "aws/chalice",
+    "title": "fix: method_whitelist deprecation warning",
+    "url": "https://github.com/aws/chalice/pull/1939",
+    "date": "Jun 2022",
+    "year": 2022,
+    "status": "merged"
+  },
+  {
+    "repo": "aws/chalice",
+    "title": "chore: remove app.pyi file",
+    "url": "https://github.com/aws/chalice/pull/1932",
+    "date": "May 2022",
+    "year": 2022,
+    "status": "closed"
+  },
+  {
+    "repo": "aws/chalice",
+    "title": "feat: WebSockets API Terraform packaging",
+    "url": "https://github.com/aws/chalice/pull/1922",
+    "date": "May 2022",
+    "year": 2022,
+    "status": "closed"
+  },
+  {
+    "repo": "vinzscam/react-native-file-viewer",
+    "title": "docs: updated README.md",
+    "url": "https://github.com/vinzscam/react-native-file-viewer/pull/116",
+    "date": "Sep 2021",
+    "year": 2021,
+    "status": "closed"
+  }
+]
